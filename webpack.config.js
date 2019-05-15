@@ -44,13 +44,6 @@ module.exports = {
             }
         ],
     },
-    resolve: {
-      alias: {
-          js: './src/js',
-          css: './src/css',
-          img: './src/images'
-      }
-    },
     plugins: [
         new HtmlWebPackPlugin({
             template: './src/index.html',

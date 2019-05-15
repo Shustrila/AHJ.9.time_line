@@ -13,5 +13,9 @@
         "sourceType": "module"
     },
     "rules": {
+        "class-methods-use-this": "off",
+        "no-new": "off",
+        "prefer-promise-reject-errors": "off",
+        "no-restricted-syntax": "off"
     }
 }
