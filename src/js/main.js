@@ -1,7 +1,7 @@
 import TimeLine from './TimeLine';
 
 const timeLine = document.querySelector('[data-widget=time-line]');
-const message = timeLine.querySelector('.js-message');
-const listPosts = timeLine.querySelector('.js-list-posts');
+const message = timeLine.querySelector('[data-widget=time-line-form]');
+const listPosts = timeLine.querySelector('[data-widget=time-line-posts]');
 
-new TimeLine(timeLine, message, listPosts);
+window.TimeLine = new TimeLine(timeLine, message, listPosts);

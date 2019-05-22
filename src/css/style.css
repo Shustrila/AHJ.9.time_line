@@ -65,16 +65,79 @@ body {
     border: 1px solid #333333;
     background-color: #ffffff;
 }
-.time-line__message-input {
-    padding: 5px;
-    font-size: 16px;
-    width: 100%;
+.time-line__message {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
     outline: transparent;
     border: 2px solid #333333;
+    background-color: #fff;
 }
-.time-line__message-input:focus {
+.time-line__message-audio,
+.time-line__message-video {
+    width: 100%;
+    outline: transparent;
+}
+.time-line__message:focus {
     border: 2px solid dodgerblue;
 }
+.time-line__form {
+    position: relative;
+    flex-grow: 1;
+}
+.time-line__window {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    padding: 10px;
+    width: calc(100% + 4px);
+    transform: translateY(-100%);
+    display: inline-block;
+    border: 2px solid #333333;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: #ffffff;
+}
+.time-line__window-video {
+    width: 100%;
+}
+.time-line__message-input {
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+.time-line__message-media {
+    padding: 0 15px;
+}
+.time-line__message-media--record {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.time-line__message-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #dddddd;
+    outline: transparent;
+    margin-right: 10px;
+}
+.time-line__message-button:last-child {
+    margin-right: 0;
+}
+.time-line__message-button:hover {
+    border: 1px solid dodgerblue;
+}
+.time-line__message-button--record {
+    margin: 0;
+}
+.time-line__message-timer {
+    margin: 0 10px;
+}
+
 .modal {
     display: flex;
     align-items: center;
@@ -86,11 +149,17 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
+    cursor: pointer;
 }
+.modal__wrapper {
+    cursor: default;
+}
+
 .modal__content {
     width: 400px;
     padding: 35px 20px;
     background-color: #ffffff;
+    z-index: 10;
 }
 .modal__content-title {
     margin-bottom: 5px;

@@ -6,13 +6,14 @@ class Text extends Posts {
     this.type = 'text';
   }
 
-  returnContent(val) {
-    const text = document.createElement('div');
+  returnContent() {
+    const text = document.createElement('p');
 
-    text.innerHTML = val;
+    text.innerHTML = this.content;
+    text.className = 'time-line__post-content-text';
 
     return text;
   }
 }
 
-export default new Text();
+export default Text;

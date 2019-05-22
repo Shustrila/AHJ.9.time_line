@@ -7,4 +7,4 @@ class Audio extends Posts {
   }
 }
 
-export default new Audio();
+export default Audio;

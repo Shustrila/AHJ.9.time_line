@@ -9,12 +9,14 @@
     </head>
     <body>
         <div class="time-line" data-widget="time-line">
-            <ul class="time-line__posts js-list-posts"></ul>
-            <form class="time-line__message js-message" action="/">
-                <label class="time-line__message-label">
-                    <input class="time-line__message-input" name="message">
-                </label>
-            </form>
+            <ul class="time-line__posts" data-widget="time-line-posts"></ul>
+            <div class="time-line__message" data-wrapper="form">
+                <form class="time-line__form js-message" data-widget="time-line-form" action="/">
+                    <label class="time-line__form-label">
+                        <input class="time-line__message-input" name="message">
+                    </label>
+                </form>
+            </div>
         </div>
     </body>
 </html>
