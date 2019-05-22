@@ -16,6 +16,8 @@
         "class-methods-use-this": "off",
         "no-new": "off",
         "prefer-promise-reject-errors": "off",
-        "no-restricted-syntax": "off"
+        "no-restricted-syntax": "off",
+        "no-param-reassign": "off",
+        "no-undef": "off"
     }
 }
